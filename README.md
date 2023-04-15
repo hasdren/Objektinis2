@@ -1,4 +1,4 @@
-# Objektinis-programavimas-1uzd
+# Objektinis-programavimas-1užd
 ## Studentų pažymių skaičiuoklė
 Ši programa skirta apskaičiuoti studentų medianą/vidurkį, pasirinkus norimus parametrus. Programa taip pat gali sugeneruoti studentų, nuskaityti bei išvesti studentų failą.
 ## Įdiegimas
