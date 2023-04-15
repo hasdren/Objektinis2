@@ -11,3 +11,10 @@
 * RAM: DDR4 3466mhz 16gb
 * Disk: 512gb SSD
 ### Skaitymo iš failo analizės rezultatai
+
+|Konteineris|
+|-----------|
+|  Deque    |
+|   List    |
+|  Vector   |     
+|           |
