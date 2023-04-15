@@ -4,3 +4,4 @@
 ## Įdiegimas
 * Atsisiųsti programą
 * Išarchyvuoti parsisiųstą aplankalą
+* Suvesti komandą `g++ -o main pasitestuoti.cpp vektoriaif.cpp` kad sukurti executable failą ir tada paleisti jį su komanda `./main`
