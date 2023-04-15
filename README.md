@@ -10,3 +10,4 @@
 * CPU: i7 - 10700k
 * RAM: DDR4 3466mhz 16gb
 * Disk: 512gb SSD
+###Skaitymo iš failo analizės rezultatai
