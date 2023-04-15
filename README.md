@@ -2,5 +2,5 @@
 ## Studentų pažymių skaičiuoklė
 Ši programa skirta apskaičiuoti studentų medianą/vidurkį, pasirinkus norimus parametrus. Programa taip pat gali sugeneruoti studentų, nuskaityti bei išvesti studentų failą.
 ## Įdiegimas
-*Atsisiųsti programą
-*Išarchyvuoti parsisiųstą aplankalą
+* Atsisiųsti programą
+* Išarchyvuoti parsisiųstą aplankalą
