@@ -84,6 +84,6 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 
 * Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma `y` rodomas galutinis pažymys su formule `vidurkisvisųpažymių * 0.4 + egz * 0.6` , atsakant `n` formulė `medianasvisųpažymių * 0.4 + egz * 0.6`
 
-* Paklausiama kokiu būdu norėtumėte, kad egzaminas būtų įvestas, jei `1`egzaminas bus sugeneruotas, o jei `2` bus įvedamas
+* Paklausiama kokiu būdu norėtumėte, kad egzaminas būtų įvestas, jei `1` egzaminas bus sugeneruotas, o jei `2` bus įvedamas
 
 * Informacija išvedama pagal preferencijas terminale
