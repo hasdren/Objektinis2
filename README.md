@@ -7,7 +7,7 @@
 * Išarchyvuoti parsisiųstą aplankalą
 
 ### Paleidimas
-* Suvesti komandą `g++ -o main pasitestuoti.cpp vektoriaif.cpp` kad sukurti executable failą ir tada paleisti jį su komanda `./main`
+* Suvesti komandą `g++ -o main main.cpp vektoriaif.cpp` kad sukurti executable failą ir tada paleisti jį su komanda `./main`
 Arba
 * Panaudojant Cmakelists.txt žiūrėti į apatinę nuotrauką
 
