@@ -44,6 +44,7 @@ Paleidus programą pagal paleidimo instruckija pirmiausiai paprašoma pasirinkit
 * Deque
 * Vector
 * List
+
 Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskaityti, galimi pasirinkimai:
 * Pažymius suvedant
 * Pažymius nuskaitant iš failo
