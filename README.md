@@ -50,7 +50,7 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 * Pažymius nuskaitant iš failo `n`
 
 ### Pasirinkus pažymius suvedant eiga:
-*Prašoma pasirinkti failą atsakant skaičiu nuo [1,5]
+* Prašoma pasirinkti failą atsakant skaičiu nuo [1,5]
 
-*Prašoma pasinkti strategiją pagal kuria bus grupuojami studentai, atsakant skaičiu nuo [1,2]
+* Prašoma pasinkti strategiją pagal kuria bus grupuojami studentai, atsakant skaičiu nuo [1,2]
 ### Pasirinkus pažymius nuskaitant eiga:
