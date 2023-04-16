@@ -63,4 +63,4 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 
 * Paklausiama ar pažymiai turėtų būtų įvedami, atsakant `y` pažymiai bus įvedami į terminal, atsakant `n` jie bus sugeneruojami
 
-* 
+* Paklausiama ar žinote pažymių kiekįm atsakant `y` bus paprašoma įvesti pažymių kiekį, kitu atveju `n` bus vedomi pažymiai tol kol bus nuspręsta nebevesti
