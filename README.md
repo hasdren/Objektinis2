@@ -49,7 +49,7 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 * Pažymius suvedant atsakant `y`arba `n`
 * Pažymius nuskaitant iš failo atsakant `y` arba `n`
 
-### Pasirinkus pažymius suvedant eiga:
+### Pasirinkus pažymius nuskaityti eiga:
 * Prašoma pasirinkti failą atsakant skaičiu nuo [1,5]
 
 * Prašoma pasinkti strategiją pagal kuria bus grupuojami studentai, atsakant skaičiu nuo [1,2]
@@ -57,6 +57,8 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 * Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma `y` galutinis pažymys rodomas pagal formulę `vidurkisvisųpažymių * 0.4 + egz * 0.6`, atsakant `n` pagal formulę `medianasvisųpažymių * 0.4 + egz * 0.6`
 
 * Po šių veiksmų eigos sugeneruojami 3 failai : `Studentai.txt`, `Gudročiai.txt`, `Bukapročiai.txt` pagal pasirinktas strategijas ir preferencijas
+
+⚠️
 
 ### Pasirinkus pažymius nuskaitant eiga:
 * Paprašoma įvesti studentų skaičių, skaičius tūri būti > 0;
