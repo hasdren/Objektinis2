@@ -46,8 +46,8 @@ Paleidus programą pagal paleidimo instruckija pirmiausiai paprašoma pasirinkit
 * List
 
 Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskaityti, galimi pasirinkimai:
-* Pažymius suvedant atsakant `y`
-* Pažymius nuskaitant iš failo `n`
+* Pažymius suvedant atsakant `y`arba `n`
+* Pažymius nuskaitant iš failo atsakant `y` arba `n`
 
 ### Pasirinkus pažymius suvedant eiga:
 * Prašoma pasirinkti failą atsakant skaičiu nuo [1,5]
