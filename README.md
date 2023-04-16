@@ -48,3 +48,7 @@ Paleidus programą pagal paleidimo instruckija pirmiausiai paprašoma pasirinkit
 Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskaityti, galimi pasirinkimai:
 * Pažymius suvedant
 * Pažymius nuskaitant iš failo
+
+###Pasirinkus pažymius suvedant eiga:
+
+###Pasirinkus pažymius nuskaitant eiga:
