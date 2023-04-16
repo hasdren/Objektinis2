@@ -11,6 +11,8 @@
 Arba
 * Panaudojant Cmakelists.txt žiūrėti į apatinę nuotrauką
 
+
+
 ## Spartos analizė
 ### Naudoto kompiuterio specifikacijos :
 * CPU: i7 - 10700k
