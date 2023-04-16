@@ -62,9 +62,9 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 * Pažymius nuskaitant iš failo atsakant `y` arba `n`
 
 ### Pasirinkus pažymius nuskaityti eiga:
-* Prašoma pasirinkti failą atsakant skaičiu nuo [1,5]
+* Prašoma pasirinkti failą atsakant skaičiu nuo `[1,5]`
 
-* Prašoma pasinkti strategiją pagal kuria bus grupuojami studentai, atsakant skaičiu nuo [1,2]
+* Prašoma pasinkti strategiją pagal kuria bus grupuojami studentai, atsakant skaičiu nuo `[1,2]`
 
 * Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma `y` galutinis pažymys rodomas pagal formulę `vidurkisvisųpažymių * 0.4 + egz * 0.6`, atsakant `n` pagal formulę `medianasvisųpažymių * 0.4 + egz * 0.6`
 
