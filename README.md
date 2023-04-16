@@ -40,7 +40,7 @@
 
 ## Programos veikimo principas
 
-Paleidus programą pagal paleidimo instruckija pirmiausiai paprašoma pasirinkite kokiame konteineryje bus norima saugoti studentų duomenis:
+Paleidus programą sugeneruojami 5 skirtingų dydžių studentų failai ir paprašoma pasirinkti kokiame konteineryje bus saugomi studentų duomenys:
 * Deque
 * Vector
 * List
