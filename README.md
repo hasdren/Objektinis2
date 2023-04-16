@@ -49,6 +49,6 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 * Pažymius suvedant
 * Pažymius nuskaitant iš failo
 
-###Pasirinkus pažymius suvedant eiga:
+### Pasirinkus pažymius suvedant eiga:
 
-###Pasirinkus pažymius nuskaitant eiga:
+### Pasirinkus pažymius nuskaitant eiga:
