@@ -39,3 +39,8 @@
 |  Vector   |0.0009s|0.0049s|0.0528s| 0.4939s | 0.8131s |
 
 ## Programos veikimo principas
+
+Paleidus programą pagal paleidimo instruckija pirmiausiai paprašoma pasirinkite kokiame konteineryje bus norima saugoti studentų duomenis:
+*Deque
+*Vector
+*List
