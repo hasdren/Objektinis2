@@ -56,4 +56,6 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 
 * Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma `y` rodomas vidurkis, atsakant `n` mediana
 
+* Po šių veiksmų eigos sugeneruojami 3 failai : `Studentai.txt`, `Gudročiai.txt`, `Bukapročiai.txt` pagal pasirinktas strategijas ir preferencijas
+
 ### Pasirinkus pažymius nuskaitant eiga:
