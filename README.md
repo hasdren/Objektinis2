@@ -66,3 +66,4 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 * Paklausiama ar žinote pažymių kiekįm atsakant `y` bus paprašoma įvesti pažymių kiekį, kitu atveju `n` bus vedomi pažymiai tol kol bus nuspręsta nebevesti
 
 * Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma `y` rodomas galutinis pažymys su formule `medianavisųpažymių * 0.4 + egz * 0.6` , atsakant `n` formulė `vidurkisvisųpažymių * 0.4 + egz * 0.6`
+* Informacija išvedama pagal preferencijas terminale
