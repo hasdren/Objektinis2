@@ -11,7 +11,7 @@
 Arba
 * Panaudojant Cmakelists.txt žiūrėti į apatinę nuotrauką
 
-
+![Screenshot_6](https://user-images.githubusercontent.com/74875916/232324225-457d1a6a-3800-409d-91aa-215ef36be126.png)
 
 ## Spartos analizė
 ### Naudoto kompiuterio specifikacijos :
