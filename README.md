@@ -87,3 +87,7 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 * Paklausiama kokiu būdu norėtumėte, kad egzaminas būtų įvestas, jei `1` egzaminas bus sugeneruotas, o jei `2` bus įvedamas
 
 * Informacija išvedama pagal preferencijas terminale
+
+## Versijos
+
+[v1.0](https://github.com/hasdren/Objektinis-programavimas-1uzd/releases/tag/v1.0) `CmakeLists.txt`, konteineriai `Deque`, `List`, `Vector`, spartos analizė
