@@ -73,7 +73,7 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 #### ⚠️ Programa nustos veikti, jeigu :
 * Nebus studentų failo projekto direktoriuje
 
-* Pažymiai studentų faile nėra invervale nuo [0;10]
+* Pažymiai studentų faile nėra invervale nuo `[0;10]`
 
 ### Pasirinkus pažymius nuskaitant eiga:
 * Paprašoma įvesti studentų skaičių, skaičius tūri būti > 0;
