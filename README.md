@@ -58,7 +58,7 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 
 * Po šių veiksmų eigos sugeneruojami 3 failai : `Studentai.txt`, `Gudročiai.txt`, `Bukapročiai.txt` pagal pasirinktas strategijas ir preferencijas
 
-⚠️ Programa nustos veikti, jeigu :
+# ⚠️ Programa nustos veikti, jeigu :
 * Nebus studentų failo projekto direktoriuje
 
 * Pažymiai studentų faile nėra invervale nuo [0;10]
