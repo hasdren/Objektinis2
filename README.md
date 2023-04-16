@@ -13,6 +13,10 @@ Arba
 
 ![Screenshot_6](https://user-images.githubusercontent.com/74875916/232324225-457d1a6a-3800-409d-91aa-215ef36be126.png)
 
+Sukurtą executable rasite build sekcijoje
+
+![Screenshot_8](https://user-images.githubusercontent.com/74875916/232324703-8389bfd0-91b0-433f-a986-375972a086e3.png)
+
 ## Spartos analizė
 ### Naudoto kompiuterio specifikacijos :
 * CPU: i7 - 10700k
