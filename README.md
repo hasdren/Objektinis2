@@ -60,3 +60,5 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 
 ### Pasirinkus pažymius nuskaitant eiga:
 * Paprašoma įvesti studentų skaičių, skaičius tūri būti > 0;
+
+* Paklausiama ar pažymiai turėtų būtų įvedami, atsakant `y` pažymiai bus įvedami į terminal, atsakane `n` jie bus sugeneruojami
