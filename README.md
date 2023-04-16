@@ -59,3 +59,4 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 * Po šių veiksmų eigos sugeneruojami 3 failai : `Studentai.txt`, `Gudročiai.txt`, `Bukapročiai.txt` pagal pasirinktas strategijas ir preferencijas
 
 ### Pasirinkus pažymius nuskaitant eiga:
+* Paprašoma įvesti studentų skaičių, skaičius tūri būti > 0;
