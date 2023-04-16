@@ -54,7 +54,7 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 
 * Prašoma pasinkti strategiją pagal kuria bus grupuojami studentai, atsakant skaičiu nuo [1,2]
 
-* Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma `y` rodomas vidurkis, atsakant `n` mediana
+* Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma `y` galutinis pažymys rodomas pagal formulę `vidurkisvisųpažymių * 0.4 + egz * 0.6`, atsakant `n` pagal formulę `medianasvisųpažymių * 0.4 + egz * 0.6`
 
 * Po šių veiksmų eigos sugeneruojami 3 failai : `Studentai.txt`, `Gudročiai.txt`, `Bukapročiai.txt` pagal pasirinktas strategijas ir preferencijas
 
@@ -65,5 +65,5 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 
 * Paklausiama ar žinote pažymių kiekįm atsakant `y` bus paprašoma įvesti pažymių kiekį, kitu atveju `n` bus vedomi pažymiai tol kol bus nuspręsta nebevesti
 
-* Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma `y` rodomas galutinis pažymys su formule `medianavisųpažymių * 0.4 + egz * 0.6` , atsakant `n` formulė `vidurkisvisųpažymių * 0.4 + egz * 0.6`
+* Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma `y` rodomas galutinis pažymys su formule `vidurkisvisųpažymių * 0.4 + egz * 0.6` , atsakant `n` formulė `medianasvisųpažymių * 0.4 + egz * 0.6`
 * Informacija išvedama pagal preferencijas terminale
