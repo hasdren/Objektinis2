@@ -41,6 +41,6 @@
 ## Programos veikimo principas
 
 Paleidus programą pagal paleidimo instruckija pirmiausiai paprašoma pasirinkite kokiame konteineryje bus norima saugoti studentų duomenis:
-*Deque
-*Vector
-*List
+* Deque
+* Vector
+* List
