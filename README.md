@@ -80,7 +80,7 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 
 * Paklausiama ar pažymiai turėtų būtų įvedami, atsakant `y` pažymiai bus įvedami į terminal, atsakant `n` jie bus sugeneruojami
 
-* Paklausiama ar žinote pažymių kiekįm atsakant `y` bus paprašoma įvesti pažymių kiekį, kitu atveju `n` bus vedomi pažymiai tol kol bus nuspręsta nebevesti
+* Paklausiama ar žinote pažymių kiekį atsakant `y` bus paprašoma įvesti pažymių kiekį `[1;15]`, kitu atveju `n` bus vedomi pažymiai tol kol bus nuspręsta nebevesti
 
 * Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma `y` rodomas galutinis pažymys su formule `vidurkisvisųpažymių * 0.4 + egz * 0.6` , atsakant `n` formulė `medianasvisųpažymių * 0.4 + egz * 0.6`
 
