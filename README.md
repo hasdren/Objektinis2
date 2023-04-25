@@ -22,6 +22,12 @@ Sukurtą executable rasite build sekcijoje
 * CPU: i7 - 10700k
 * RAM: DDR4 3466mhz 16gb
 * Disk: 512gb SSD
+### Failų generavimo laikas
+
+|Dydis| 1000 | 10000 | 100000 | 1000000 | 10000000 |
+|-----------|------|-------|--------|---------|----------|
+|  Laikas   |0.011968s|0.10941s|1.04267s|9.94151s|100.536s|
+
 ### Skaitymo iš failo analizės rezultatai
 
 |Konteineris| 1000 | 10000 | 100000 | 1000000 | 10000000 |
