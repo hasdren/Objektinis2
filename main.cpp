@@ -5,7 +5,7 @@ int main()
     GenerateFile(10000);
     GenerateFile(100000);
     GenerateFile(1000000);
-    GenerateFile(10000000);
+  GenerateFile(10000000);
     int containerchoise;
     cout<<"pasirinkite koki konteineri naudosite"<<endl;
     cout<<"1. deque\n";

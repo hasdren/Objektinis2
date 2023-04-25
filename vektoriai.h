@@ -12,28 +12,17 @@
 #include <list>
 #include <string>
 #include <cctype>
+#include "Studentas.h"
 using namespace std;
-
-struct studentas
-{
-    int n;         
-    vector<int> nd; 
-    string vardas;
-    string pavarde;
-    double final;
-    int egzaminas;
-};
-
 void Container(int);
 void GenerateFile(int);
 template <typename Container>
 void Generatefromfile(Container&, Container&, Container&, int);
 bool correctstring(string name);
 string correctName();
-bool comparePagalPavarde(const studentas&x, const studentas&y);
+bool comparePagalPavarde(const Studentas&x, const Studentas&y);
 void Random(int n, vector<int>&nd, int i);
 void Random(int i, vector<int>&nd);
-template <typename Container>
 double Average(vector <int> &nd, int egz);
 double Median(vector <int> &nd, int egz);
 template <typename Container>
@@ -48,11 +37,8 @@ int Choosefile();
 int File();
 void printheaderAverage();
 void printheaderMedian();
-template <typename Container>
 void Manualnotknown(int , vector<int> &);
-template <typename Container>
 void assignHomeworksize(int &, int);
-template <typename Container>
 void IvestisSK(int c, vector<int> &nd);
 void IvestisSk(int n, vector<int> &nd, int i);
 void printheaderAverage();

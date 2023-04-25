@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Objektinis-programavimas-1užd
 ## Studentų pažymių skaičiuoklė
 Ši programa skirta apskaičiuoti studentų medianą/vidurkį, pasirinkus norimus parametrus. Programa taip pat gali sugeneruoti studentų, nuskaityti bei išvesti studentų failą.
@@ -97,3 +98,6 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 ## Versijos
 
 [v1.0](https://github.com/hasdren/Objektinis-programavimas-1uzd/releases/tag/v1.0) `CmakeLists.txt`, konteineriai `Deque`, `List`, `Vector`, spartos analizė
+=======
+# Objektinis2
+>>>>>>> origin/main

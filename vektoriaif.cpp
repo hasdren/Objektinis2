@@ -28,8 +28,8 @@ string correctName(){
     
 }
 
-bool comparePagalPavarde(const studentas&x, const studentas&y) {
- return x.vardas > y.vardas;
+bool comparePagalPavarde(const Studentas&x, const Studentas&y) {
+ return x.getVardas() > y.getPavarde();
 }
 
 void Random(int n, vector<int>&nd, int i)
@@ -113,8 +113,8 @@ double Median(vector <int> &nd, int egz)
 template <typename Container>
 void printfinal(Container&s, int student_size){
     for(int i=0; i<student_size;i++){
-        cout << left << setw(10) << s.back().vardas << setw(16) << s.back().pavarde << setw(12)<<fixed<<setprecision(2) << s.back().final << endl;
-        s.pop_back();  
+        cout << left << setw(10) << s.back().getVardas() << setw(16) << s.back().getPavarde() << setw(12)<<fixed<<setprecision(2) << s.back().getFinal() << endl;
+        s.pop_back(); 
     }
 }
 
@@ -229,6 +229,7 @@ int File(){
 
 }
 void GenerateFile(int s){
+    auto start = std::chrono::high_resolution_clock::now();
     string failas = "Studentai"+to_string(s)+".txt";
     ofstream out(failas);
     out << fixed << left << setw(20) << "Vardas";
@@ -254,7 +255,9 @@ void GenerateFile(int s){
         
         
     }
-    
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<float> duration = end - start;
+    cout<<"Failo"<<s<<"Studentu generavimo laikas: "<<duration.count()<<"s"<<endl;
 }
 
 void printheaderAverage() {
@@ -382,9 +385,12 @@ int Getstrategy(int &strategy){
 
 template <typename Container>
 void Generatefromfile(Container&s, Container&w, Container&l, int choise) {
-    string failas, test, line;
-    int findouthomework = 0, studentfile = 0, grade, showaverage, studentcontainer_size, bukaprociaicontainer_size, gudrociaicontainer_size, strategy;
+    string failas, test, line, vardas, pavarde;
+    int findouthomework = 0, studentfile = 0, grade, showaverage, studentcontainer_size, bukaprociaicontainer_size, gudrociaicontainer_size, strategy, Egzaminas;
+    double Final;
+
     Getstrategy(strategy);
+    showaverage = SA();
     if (choise == 1)
         {
             failas = "Studentai10000.txt";
@@ -413,17 +419,23 @@ void Generatefromfile(Container&s, Container&w, Container&l, int choise) {
         auto start = std::chrono::high_resolution_clock::now();
         in >> test;
         in >> test;
-        while (test != "ND15")
+        while (true)
         {
             in >> test;
-            findouthomework++;
+            if (test=="Egz."){
+                break;
+            }
+            else {
+                findouthomework++;
+            }
         }
-        in>>test;
         while (!(in.eof()))
         {   
-            studentas stud;
-            in >> stud.vardas;
-            in >> stud.pavarde;
+            Studentas stud;
+            in >> vardas;
+            stud.setVardas(vardas);
+            in >> pavarde;
+            stud.setPavarde(pavarde);
             for (int m = 0; m < findouthomework; m++)
             {
                 in >> grade;
@@ -431,19 +443,22 @@ void Generatefromfile(Container&s, Container&w, Container&l, int choise) {
                     throw 2;
                 }
                 else{
-                    stud.nd.push_back(grade);
+                    stud.addND(grade);
                     }
             }
-            in >> stud.egzaminas;
+            in >> Egzaminas;
+            stud.setEgzaminas(Egzaminas);
             studentfile++;
-            if (showaverage==1){
-                stud.final = Average(stud.nd, stud.egzaminas);
+            if (showaverage == 1){
+                Final = Average(stud.getND(), Egzaminas);
             }
             else {
-                stud.final = Median(stud.nd, stud.egzaminas);
+                Final = Median(stud.getND(), Egzaminas);
             }
+            stud.setFinal(Final);
             s.push_back(stud);
         }
+        
         auto end = std::chrono::high_resolution_clock::now();
         std::chrono::duration<float> duration = end - start;
         cout<<"Is failo nuskaitymo laikas :"<<duration.count()<<"s"<<endl;
@@ -461,25 +476,26 @@ void Generatefromfile(Container&s, Container&w, Container&l, int choise) {
                 exit(0);
                 break;
             }
-        }
-            showaverage = SA();
+        } 
             s.resize(studentfile-1);
             if (strategy == 1) {
             auto start = std::chrono::high_resolution_clock::now();
-            copy_if(s.begin(), s.end(), back_inserter(w), [](studentas const& s) {return s.final >= 5; });
-            copy_if(s.begin(), s.end(), back_inserter(l), [](studentas const& s) {return s.final < 5; });
+            copy_if(s.begin(), s.end(), back_inserter(w), [](Studentas const& s) {return s.getFinal() >= 5; });
+            copy_if(s.begin(), s.end(), back_inserter(l), [](Studentas const& s) {return s.getFinal() < 5; });
             auto end = std::chrono::high_resolution_clock::now();
             std::chrono::duration<float> duration = end - start;
             cout<<"Strategijos 1 laikas :"<<duration.count()<<"s"<<endl;
             }
             else if (strategy == 2){
                 auto start = std::chrono::high_resolution_clock::now();
-                copy_if(s.begin(), s.end(), back_inserter(l), [](studentas const& s) {return s.final < 5; });
-                s.erase(remove_if(s.begin(), s.end(),  [](studentas const& s) {return s.final < 5; }), s.end());
+                copy_if(s.begin(), s.end(), back_inserter(l), [](Studentas const& s) {return s.getFinal() < 5; });
+                s.erase(remove_if(s.begin(), s.end(),  [](Studentas const& s) {return s.getFinal() < 5; }), s.end());
                 auto end = std::chrono::high_resolution_clock::now();
                 std::chrono::duration<float> duration = end - start;
                 cout<<"Strategijos 2 laikas :"<<duration.count()<<"s"<<endl;
             }
+            
+            
             studentcontainer_size = s.size();
             gudrociaicontainer_size = w.size();
             bukaprociaicontainer_size = l.size();
@@ -491,9 +507,9 @@ void Generatefromfile(Container&s, Container&w, Container&l, int choise) {
             outk << "-----------------------------------------------------------" << endl;
             for (int b = 0; b < gudrociaicontainer_size; b++)
             {
-                outk << fixed << left << setw(20) << w.back().vardas;
-                outk << fixed << left << setw(20) << w.back().vardas;
-                outk << fixed << setprecision(2)<< setw(10) << w.back().final << " " << endl;
+                outk << fixed << left << setw(20) << w.back().getVardas();
+                outk << fixed << left << setw(20) << w.back().getPavarde();
+                outk << fixed << setprecision(2)<< setw(10) << w.back().getFinal() << " " << endl;
                 w.pop_back();
             }
             ofstream outp("Bukraprociai.txt");
@@ -503,9 +519,9 @@ void Generatefromfile(Container&s, Container&w, Container&l, int choise) {
             outp << "-----------------------------------------------------------" << endl;
             for (int b = 0; b < bukaprociaicontainer_size; b++)
             {
-                outp << fixed << left << setw(20) << l.back().vardas;
-                outp<< fixed << left << setw(20) << l.back().pavarde;
-                outp << fixed << setprecision(2)<< setw(10) << l.back().final<< " " << endl;
+                outp << fixed << left << setw(20) << l.back().getVardas();
+                outp<< fixed << left << setw(20) << l.back().getPavarde();
+                outp << fixed << setprecision(2)<< setw(10) << l.back().getFinal()<< " " << endl;
                 l.pop_back();
             }
             
@@ -519,53 +535,58 @@ void Generatefromfile(Container&s, Container&w, Container&l, int choise) {
 
             for (int b = 0; b < studentcontainer_size; b++)
             {
-                out << fixed << left << setw(20) << s.back().vardas;
-                out << fixed << left << setw(20) << s.back().pavarde;
-                out << fixed << setprecision(2)<< setw(10) << s.back().final << " " << endl;
+                out << fixed << left << setw(20) << s.back().getVardas();
+                out << fixed << left << setw(20) << s.back().getPavarde();
+                out << fixed << setprecision(2)<< setw(10) << s.back().getFinal() << " " << endl;
                 s.pop_back();
             }
-            
     }
-
     template <typename Container>
     void MainFunction(Container&s, int Entergrades, int knowhomework, int showaverage, int i){
-    studentas stud;
+    string vardas,pavarde;
+    Studentas stud;
+    int egzaminas;
+    double final;
     cout<<"Iveskite "<<i+1<<"-ojo Studento varda: ";
-    stud.vardas = correctName();
+    vardas = correctName();
+    stud.setVardas(vardas);
     cout<<"Iveskite "<<i+1<<"-ojo Studento pavarde: ";
-    stud.pavarde = correctName();
+    pavarde = correctName();
+    stud.setPavarde(pavarde);
     if (knowhomework == 0 && Entergrades == 0)
         {
-            Randomnotknown(i,stud.nd);
+            Randomnotknown(i,stud.getND());
         }
 
         else if (knowhomework == 1 && Entergrades == 1)
         {
-            assignHomeworksize(stud.n, i);
-            IvestisSk(stud.n, stud.nd, i);
+            assignHomeworksize(stud.getn(), i);
+            IvestisSk(stud.getn(), stud.getND(), i);
         }
         else if (Entergrades == 0 && knowhomework == 1)  
         {
-            assignHomeworksize(stud.n, i);
-            Random(stud.n, stud.nd, i);
+            assignHomeworksize(stud.getn(), i);
+            Random(stud.getn(), stud.getND(), i);
         }
         else if (Entergrades == 1 && knowhomework == 0)
         {
-            Manualnotknown(i, stud.nd);
+            Manualnotknown(i, stud.getND());
         }
 
-        stud.egzaminas = Egzaminas();
+        egzaminas = Egzaminas();
+        stud.setEgzaminas(egzaminas);
 
         if (showaverage == 1)
         {
 
-            stud.final = Average(stud.nd, stud.egzaminas);
+            final = Average(stud.getND(), stud.getEgzaminas());
         }
         else
         {  
-            stud.final = Median(stud.nd, stud.egzaminas);
+            final = Median(stud.getND(), stud.getEgzaminas());
         }
         
+        stud.setFinal(final);
         s.push_back(stud);
 }
 
@@ -582,16 +603,18 @@ void Manualterminal(Container &s, int Entergrades, int knowhomework, int showave
 
 void Container(int conchoise) {
     int students, showaverage, Entergrades, knowhomework, readfile, choise;
+    auto start = std::chrono::high_resolution_clock::now();
     readfile = File();
     if (conchoise == 1){
-    deque<studentas> s;
-    deque<studentas> w;
-    deque<studentas> l;
+    deque<Studentas> s;
+    deque<Studentas> w;
+    deque<Studentas> l;
     if (readfile == 1)
     {
         choise = Choosefile();
         Generatefromfile(s,w,l,choise);
     }
+    
     else
     {
         students = studentEntry();
@@ -600,6 +623,7 @@ void Container(int conchoise) {
         knowhomework = HomeworkKnown();
         showaverage = SA();
         Manualterminal(s, Entergrades, knowhomework, showaverage, students);
+        sort(s.begin(), s.end(), comparePagalPavarde);
         if (showaverage==1) {
             printheaderAverage();
             printfinal(s, students);
@@ -609,13 +633,13 @@ void Container(int conchoise) {
             printfinal(s, students);
  
         }
-    } 
     }
-
+    }
+    
     else if(conchoise == 2){
-    list<studentas> s;
-    list<studentas> w;
-    list<studentas> l;
+    list<Studentas> s;
+    list<Studentas> w;
+    list<Studentas> l;
     if (readfile == 1)
     {
         choise = Choosefile();
@@ -629,6 +653,7 @@ void Container(int conchoise) {
         knowhomework = HomeworkKnown();
         showaverage = SA();
         Manualterminal(s, Entergrades, knowhomework, showaverage, students);
+        s.sort(comparePagalPavarde);
         if (showaverage==1) {
             printheaderAverage();
             printfinal(s, students);
@@ -642,9 +667,9 @@ void Container(int conchoise) {
     }
 
     else if (conchoise == 3) {
-    vector<studentas> s;
-    vector<studentas> w;
-    vector<studentas> l;
+    vector<Studentas> s;
+    vector<Studentas> w;
+    vector<Studentas> l;
     if (readfile == 1)
     {
         choise = Choosefile();
@@ -653,7 +678,7 @@ void Container(int conchoise) {
     else
     {
         students = studentEntry();
-        //s.resize(students);//
+        s.resize(students);
         Entergrades = ManualEntry();
         knowhomework = HomeworkKnown();
         showaverage = SA();
@@ -669,10 +694,10 @@ void Container(int conchoise) {
  
         }
     } 
-
     }
-    
-    
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<float> duration = end - start;
+    cout<<"Viso kodo laikas: "<<duration.count()<<"s"<<endl;
     
     
 }
