@@ -122,4 +122,5 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 
 ## Versijos
 
-[v1.1](https://github.com/hasdren/Objektinis-programavimas-1uzd/releases/tag/v1.0) pridėtos `klasės`, padaryta optimizavimo flagų analizė, pridėta failų generavimo, `klasės` `struktūrų` spartos analizė
+[v1.1](https://github.com/hasdren/Objektinis2/releases/tag/v1.1) pridėtos `klasės`, padaryta optimizavimo flagų analizė, pridėta failų generavimo, `klasės` `struktūrų` spartos analizė
+[v1.2](https://github.com/hasdren/Objektinis2/releases/tag/v1.1) Įvykdyta `Rule of three`: pridėtas kopijavimo konstruktorius, priskyrimo operatorius bei destruktorius.

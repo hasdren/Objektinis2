@@ -16,6 +16,18 @@ public:
     Studentas(): vardas(""), pavarde(""), n(0), egzaminas(0) {}
     Studentas(string vardas, string pavarde, int egzaminas, vector<int> nd)
     : vardas(vardas), pavarde(pavarde), egzaminas(egzaminas), nd(nd) {}
+    Studentas (const Studentas &obj){
+        vardas=obj.vardas;
+        pavarde=obj.pavarde;
+        egzaminas=obj.egzaminas;
+        nd=obj.nd;
+    }
+    inline void operator =(const Studentas &obj){
+        vardas=obj.vardas;
+        pavarde=obj.pavarde;
+        egzaminas=obj.egzaminas;
+        nd=obj.nd;
+    }
     inline void setVardas(string SetVardas){vardas = SetVardas;}
     inline void setPavarde(string SetPavarde){pavarde = SetPavarde;}
     inline void setN(int SetN){n = SetN;}
@@ -27,10 +39,12 @@ public:
     inline string getVardas () const { return vardas; }
     inline string getPavarde() const { return pavarde;}
     inline double getFinal() const {return final;}
-    inline vector <int>& getND(){ return nd;}
+    inline vector <int>& getND() { return nd;}
     inline void addND(int grade){nd.push_back(grade);}
     
-    ~Studentas() {}
+    ~Studentas() {
+        nd.clear();
+    }
 };
 
 #endif
