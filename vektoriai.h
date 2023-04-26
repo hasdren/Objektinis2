@@ -25,10 +25,6 @@ void Random(int n, vector<int>&nd, int i);
 void Random(int i, vector<int>&nd);
 double Average(vector <int> &nd, int egz);
 double Median(vector <int> &nd, int egz);
-template <typename Container>
-void printmed(Container&, int);
-template <typename Container>
-void printave(Container&, int);
 int studentEntry();
 int ManualEntry();
 int HomeworkKnown();

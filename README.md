@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Objektinis-programavimas-1užd
 ## Studentų pažymių skaičiuoklė
 Ši programa skirta apskaičiuoti studentų medianą/vidurkį, pasirinkus norimus parametrus. Programa taip pat gali sugeneruoti studentų, nuskaityti bei išvesti studentų failą.
@@ -23,6 +22,13 @@ Sukurtą executable rasite build sekcijoje
 * CPU: i7 - 10700k
 * RAM: DDR4 3466mhz 16gb
 * Disk: 512gb SSD
+
+### Viso kodo laikas naudojant struktūras ir 2-ąją strategiją su vektoriaus konteineriu
+
+|Dydis| 100000 | 1000000 |
+|-----------|------|-------|
+|  Laikas   |15.3364s|49.7247s| 
+
 ### Failų generavimo laikas
 
 |Dydis| 1000 | 10000 | 100000 | 1000000 | 10000000 |
@@ -98,6 +104,22 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 ## Versijos
 
 [v1.0](https://github.com/hasdren/Objektinis-programavimas-1uzd/releases/tag/v1.0) `CmakeLists.txt`, konteineriai `Deque`, `List`, `Vector`, spartos analizė
-=======
 # Objektinis2
->>>>>>> origin/main
+
+### Viso kodo laikas naudojant vektoriaus konteinerį su 2 strategija
+
+|Failo dydis| 100000 | 1000000 |
+|-----------|------|-------|
+|  01 -f   |11.5589s|34.0681s|
+|  02 -f  |18.2451s|55.4837s|
+|  03 -f   |29.3304s|42.7871s|
+
+### Viso kodo laikas naudojant Klases ir 2-ąją strategiją su vektoriaus konteineriu
+
+|Dydis| 100000 | 1000000 |
+|-----------|------|-------|
+|  Laikas   |22.1995s|35.4418s|
+
+## Versijos
+
+[v1.1](https://github.com/hasdren/Objektinis-programavimas-1uzd/releases/tag/v1.0) pridėtos `klasės`, padaryta optimizavimo flagų analizė, pridėta failų generavimo, `klasės` `struktūrų` spartos analizė
