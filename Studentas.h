@@ -1,43 +1,35 @@
 #ifndef STUDENTAS_H
 #define STUDENTAS_H
-
-#include <string>
-#include <vector>
-using std::string;
-using std::vector;
-
-class Studentas {
+#include "zmogus.h"
+class Studentas: public Zmogus{
 private:
-    string vardas, pavarde;
     int n, egzaminas;
     vector <int> nd;
     double final;
 public:
-    Studentas(): vardas(""), pavarde(""), n(0), egzaminas(0) {}
+    Studentas(): Zmogus("",""), egzaminas(0), n(0) {}
     Studentas(string vardas, string pavarde, int egzaminas, vector<int> nd)
-    : vardas(vardas), pavarde(pavarde), egzaminas(egzaminas), nd(nd) {}
+    : Zmogus(vardas, pavarde), egzaminas(egzaminas), nd(nd) {}
     Studentas (const Studentas &obj){
-        vardas=obj.vardas;
-        pavarde=obj.pavarde;
+        vardas=obj.getVardas();
+        pavarde=obj.getPavarde();
         egzaminas=obj.egzaminas;
         nd=obj.nd;
+        final=obj.final;
     }
     inline void operator =(const Studentas &obj){
-        vardas=obj.vardas;
-        pavarde=obj.pavarde;
+        vardas=obj.getVardas();
+        pavarde=obj.getPavarde();
         egzaminas=obj.egzaminas;
         nd=obj.nd;
+        final=obj.final;
     }
-    inline void setVardas(string SetVardas){vardas = SetVardas;}
-    inline void setPavarde(string SetPavarde){pavarde = SetPavarde;}
     inline void setN(int SetN){n = SetN;}
     inline void setEgzaminas(int SetEgzaminas){ egzaminas= SetEgzaminas;}
     inline void setND(vector<int> setND){nd = setND;}
-    inline void setFinal(double SetFinal) { final = SetFinal;}
+    inline void setFinal(double SetFinal) {final = SetFinal;}
     inline int& getn() { return n; }
     inline int getEgzaminas() const { return egzaminas; }
-    inline string getVardas () const { return vardas; }
-    inline string getPavarde() const { return pavarde;}
     inline double getFinal() const {return final;}
     inline vector <int>& getND() { return nd;}
     inline void addND(int grade){nd.push_back(grade);}
@@ -46,5 +38,4 @@ public:
         nd.clear();
     }
 };
-
 #endif

@@ -458,11 +458,9 @@ void Generatefromfile(Container&s, Container&w, Container&l, int choise) {
             stud.setFinal(Final);
             s.push_back(stud);
         }
-        
         auto end = std::chrono::high_resolution_clock::now();
         std::chrono::duration<float> duration = end - start;
         cout<<"Is failo nuskaitymo laikas :"<<duration.count()<<"s"<<endl;
-        
         }
         catch(int e){
             cout<<"Error!";
@@ -480,11 +478,12 @@ void Generatefromfile(Container&s, Container&w, Container&l, int choise) {
             s.resize(studentfile-1);
             if (strategy == 1) {
             auto start = std::chrono::high_resolution_clock::now();
-            copy_if(s.begin(), s.end(), back_inserter(w), [](Studentas const& s) {return s.getFinal() >= 5; });
-            copy_if(s.begin(), s.end(), back_inserter(l), [](Studentas const& s) {return s.getFinal() < 5; });
+            copy_if(s.begin(), s.end(), back_inserter(w), [](Studentas const& s) {return s.getFinal() >= 5;});
+            copy_if(s.begin(), s.end(), back_inserter(l), [](Studentas const& s) {return s.getFinal() < 5;});
             auto end = std::chrono::high_resolution_clock::now();
             std::chrono::duration<float> duration = end - start;
             cout<<"Strategijos 1 laikas :"<<duration.count()<<"s"<<endl;
+
             }
             else if (strategy == 2){
                 auto start = std::chrono::high_resolution_clock::now();
@@ -683,7 +682,7 @@ void Container(int conchoise) {
         knowhomework = HomeworkKnown();
         showaverage = SA();
         Manualterminal(s, Entergrades, knowhomework, showaverage, students);
-        sort(s.begin(), s.end(), comparePagalPavarde);//Didesni metami i gala
+        sort(s.begin(), s.end(), comparePagalPavarde);
         if (showaverage==1) {
             printheaderAverage();
             printfinal(s, students);
