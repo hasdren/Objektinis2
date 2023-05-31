@@ -1,0 +1,172 @@
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{Studentų pažymių skaičiuoklė}\label{md__r_e_a_d_m_e_autotoc_md1}
+Ši programa skirta apskaičiuoti studentų medianą/vidurkį, pasirinkus norimus parametrus. Programa taip pat gali sugeneruoti studentų, nuskaityti bei išvesti studentų failą. \hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysection{Įdiegimas ir paleidimas}\label{md__r_e_a_d_m_e_autotoc_md2}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{Atsisiuntimas}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item Atsisiųsti programą
+\item Išarchyvuoti parsisiųstą aplankalą
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{Paleidimas}\label{md__r_e_a_d_m_e_autotoc_md4}
+
+\begin{DoxyItemize}
+\item Suvesti komandą {\ttfamily g++ -\/o main main.\+cpp vektoriaif.\+cpp} kad sukurti executable failą ir tada paleisti jį su komanda {\ttfamily ./main} 
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxyparagraph{Arba}\label{md__r_e_a_d_m_e_autotoc_md5}
+
+\begin{DoxyItemize}
+\item Panaudojant Cmakelists.\+txt žiūrėti į apatinę nuotrauką
+\end{DoxyItemize}
+
+
+
+Sukurtą executable rasite build sekcijoje
+
+\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysection{Spartos analizė}\label{md__r_e_a_d_m_e_autotoc_md6}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsection{Naudoto kompiuterio specifikacijos \+:}\label{md__r_e_a_d_m_e_autotoc_md7}
+
+\begin{DoxyItemize}
+\item CPU\+: i7 -\/ 10700k
+\item RAM\+: DDR4 3466mhz 16gb
+\item Disk\+: 512gb SSD
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsection{Viso kodo laikas naudojant struktūras ir 2-\/ąją strategiją su vektoriaus konteineriu}\label{md__r_e_a_d_m_e_autotoc_md8}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dydis   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dydis   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000    }\\\cline{1-3}
+\endhead
+Laikas   &15.\+3364s   &49.\+7247s   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{Failų generavimo laikas}\label{md__r_e_a_d_m_e_autotoc_md9}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dydis   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000000    }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dydis   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000000    }\\\cline{1-6}
+\endhead
+Laikas   &0.\+011968s   &0.\+10941s   &1.\+04267s   &9.\+94151s   &100.\+536s   \\\cline{1-6}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsection{Skaitymo iš failo analizės rezultatai}\label{md__r_e_a_d_m_e_autotoc_md10}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Konteineris   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000000    }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Konteineris   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000000    }\\\cline{1-6}
+\endhead
+Deque   &0.\+0169s   &0.\+168s   &1.\+6867s   &16.\+794s   &26.\+432s    \\\cline{1-6}
+List   &0.\+0179s   &0.\+168s   &1.\+6871s   &16.\+844s   &26.\+0647s    \\\cline{1-6}
+Vector   &0.\+0179s   &0.\+173s   &1.\+7122s   &16.\+836s   &26.\+4494s   \\\cline{1-6}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md11}{}\doxysubsection{1-\/os Grupavimo strategijos spartos analizė}\label{md__r_e_a_d_m_e_autotoc_md11}
+Šitoje grupavimo strategija nukopijuoja iš {\ttfamily s} konteinerio duomenys jeigu studento vidurkis \texorpdfstring{$>$}{>}= 5 į {\ttfamily w} konteinerį, kitu atveju to studento duomenys kopijuojami į {\ttfamily l} konteinerį.
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Konteineris   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000000    }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Konteineris   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000000    }\\\cline{1-6}
+\endhead
+Deque   &0.\+0009s   &0.\+0039s   &0.\+0408s   &0.\+3955s   &0.\+6017s    \\\cline{1-6}
+List   &0.\+0009s   &0.\+0049s   &0.\+4955s   &0.\+4915s   &0.\+7654s    \\\cline{1-6}
+Vector   &0.\+0009s   &0.\+0059s   &0.\+0668s   &0.\+7277s   &1.\+0450s   \\\cline{1-6}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md12}{}\doxysubsection{2-\/os Grupavimos strategijos spartos analizė}\label{md__r_e_a_d_m_e_autotoc_md12}
+Šitoje grupavimo strategijoje iš {\ttfamily s} konteinerio duomenys kopijuojami, jeigu studento vidurkis \texorpdfstring{$<$}{<} 5 į {\ttfamily l} konteinerį tuomet tie duomenys {\ttfamily s} konteineryje yra ištrinami taip paliekant studentus su vidurkiu \texorpdfstring{$>$}{>}= 5
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{6}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Konteineris   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000000    }\\\cline{1-6}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Konteineris   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 10000000    }\\\cline{1-6}
+\endhead
+Deque   &0.\+0009s   &0.\+0039s   &0.\+0398s   &0.\+4134s   &0.\+6411s    \\\cline{1-6}
+List   &0.\+0009s   &0.\+0049s   &0.\+0475s   &0.\+4807s   &0.\+7394s    \\\cline{1-6}
+Vector   &0.\+0009s   &0.\+0049s   &0.\+0528s   &0.\+4939s   &0.\+8131s   \\\cline{1-6}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md13}{}\doxysection{Programos veikimo principas}\label{md__r_e_a_d_m_e_autotoc_md13}
+Paleidus programą sugeneruojami 5 skirtingų dydžių studentų failai ir paprašoma pasirinkti kokiame konteineryje bus saugomi studentų duomenys\+:
+\begin{DoxyItemize}
+\item Deque
+\item Vector
+\item List
+\end{DoxyItemize}
+
+Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskaityti, galimi pasirinkimai\+:
+\begin{DoxyItemize}
+\item Pažymius suvedant atsakant {\ttfamily y}arba {\ttfamily n}
+\item Pažymius nuskaitant iš failo atsakant {\ttfamily y} arba {\ttfamily n}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md14}{}\doxysubsection{Pasirinkus pažymius nuskaityti eiga\+:}\label{md__r_e_a_d_m_e_autotoc_md14}
+
+\begin{DoxyItemize}
+\item Prašoma pasirinkti failą atsakant skaičiu nuo {\ttfamily \mbox{[}1,5\mbox{]}}
+\item Prašoma pasinkti strategiją pagal kuria bus grupuojami studentai, atsakant skaičiu nuo {\ttfamily \mbox{[}1,2\mbox{]}}
+\item Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma {\ttfamily y} galutinis pažymys rodomas pagal formulę {\ttfamily vidurkisvisųpažymių $\ast$ 0.\+4 + egz $\ast$ 0.\+6}, atsakant {\ttfamily n} pagal formulę {\ttfamily medianasvisųpažymių $\ast$ 0.\+4 + egz $\ast$ 0.\+6}
+\item Po šių veiksmų eigos sugeneruojami 3 failai \+: {\ttfamily Studentai.\+txt}, {\ttfamily Gudročiai.\+txt}, {\ttfamily Bukapročiai.\+txt} pagal pasirinktas strategijas ir preferencijas
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md15}{}\doxysubsubsection{⚠️ Programa nustos veikti, jeigu \+:}\label{md__r_e_a_d_m_e_autotoc_md15}
+
+\begin{DoxyItemize}
+\item Nebus studentų failo projekto direktoriuje
+\item Pažymiai studentų faile nėra invervale nuo {\ttfamily \mbox{[}0;10\mbox{]}}
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md16}{}\doxysubsection{Pasirinkus pažymius nuskaitant eiga\+:}\label{md__r_e_a_d_m_e_autotoc_md16}
+
+\begin{DoxyItemize}
+\item Paprašoma įvesti studentų skaičių, skaičius tūri būti \texorpdfstring{$>$}{>} 0;
+\item Paklausiama ar pažymiai turėtų būtų įvedami, atsakant {\ttfamily y} pažymiai bus įvedami į terminal, atsakant {\ttfamily n} jie bus sugeneruojami
+\item Paklausiama ar žinote pažymių kiekį atsakant {\ttfamily y} bus paprašoma įvesti pažymių kiekį {\ttfamily \mbox{[}1;15\mbox{]}}, kitu atveju {\ttfamily n} bus vedomi pažymiai tol kol bus nuspręsta nebevesti
+\item Paklausiama ar vartotojas nori matyti vidurkį kaip galutinį rezultatą atsakant (y/n), jei atsakoma {\ttfamily y} rodomas galutinis pažymys su formule {\ttfamily vidurkisvisųpažymių $\ast$ 0.\+4 + egz $\ast$ 0.\+6} , atsakant {\ttfamily n} formulė {\ttfamily medianasvisųpažymių $\ast$ 0.\+4 + egz $\ast$ 0.\+6}
+\item Paklausiama kokiu būdu norėtumėte, kad egzaminas būtų įvestas, jei {\ttfamily 1} egzaminas bus sugeneruotas, o jei {\ttfamily 2} bus įvedamas
+\item Informacija išvedama pagal preferencijas terminale
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md17}{}\doxysection{Versijos}\label{md__r_e_a_d_m_e_autotoc_md17}
+\href{https://github.com/hasdren/Objektinis-programavimas-1uzd/releases/tag/v1.0}{\texttt{ v1.\+0}} {\ttfamily Cmake\+Lists.\+txt}, konteineriai {\ttfamily Deque}, {\ttfamily List}, {\ttfamily Vector}, spartos analizė \hypertarget{md__r_e_a_d_m_e_autotoc_md18}{}\doxysection{Objektinis2}\label{md__r_e_a_d_m_e_autotoc_md18}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md19}{}\doxysubsubsection{Viso kodo laikas naudojant vektoriaus konteinerį su 2 strategija}\label{md__r_e_a_d_m_e_autotoc_md19}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Failo dydis   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Failo dydis   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000    }\\\cline{1-3}
+\endhead
+01 -\/f   &11.\+5589s   &34.\+0681s    \\\cline{1-3}
+02 -\/f   &18.\+2451s   &55.\+4837s    \\\cline{1-3}
+03 -\/f   &29.\+3304s   &42.\+7871s   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md20}{}\doxysubsubsection{Viso kodo laikas naudojant Klases ir 2-\/ąją strategiją su vektoriaus konteineriu}\label{md__r_e_a_d_m_e_autotoc_md20}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dydis   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ Dydis   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 100000   }&\PBS\centering \cellcolor{\tableheadbgcolor}\textbf{ 1000000    }\\\cline{1-3}
+\endhead
+Laikas   &22.\+1995s   &35.\+4418s   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md21}{}\doxysubsection{Versijos}\label{md__r_e_a_d_m_e_autotoc_md21}
+\href{https://github.com/hasdren/Objektinis2/releases/tag/v1.1}{\texttt{ v1.\+1}} pridėtos {\ttfamily klasės}, padaryta optimizavimo flagų analizė, pridėta failų generavimo, {\ttfamily klasės} {\ttfamily struktūrų} spartos analizė
+
+\href{https://github.com/hasdren/Objektinis2/releases/tag/v1.2}{\texttt{ v1.\+2}} Įvykdyta {\ttfamily Rule of three}\+: pridėtas kopijavimo konstruktorius, priskyrimo operatorius bei destruktorius.
+
+\href{https://github.com/hasdren/Objektinis2/releases/tag/v1.3}{\texttt{ v1.\+3}} Sukurta derived klasė {\ttfamily \mbox{\hyperlink{class_studentas}{Studentas}}} iš bazinės abstrakčios klasės {\ttfamily \mbox{\hyperlink{class_zmogus}{Zmogus}}} 
