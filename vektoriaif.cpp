@@ -29,7 +29,7 @@ string correctName(){
 }
 
 bool comparePagalPavarde(const Studentas&x, const Studentas&y) {
- return x.getVardas() > y.getPavarde();
+return x.getPavarde() < y.getPavarde();
 }
 
 void Random(int n, vector<int>&nd, int i)
@@ -91,7 +91,7 @@ double Average(vector <int> &nd, int egz)
         sum = sum + nd[j];
     }
     sum = sum / nd.size();
-    return sum * 0.4 + egz * 0.6;
+    return round(sum * 0.4 + egz * 0.6);
 }
 
 double Median(vector <int> &nd, int egz)
@@ -107,7 +107,7 @@ double Median(vector <int> &nd, int egz)
     {
         sum = (nd[nd.size() / 2.0] + nd[(nd.size() / 2.0) - 1]) / 2.0;
     }
-    return sum * 0.4 + egz * 0.6;
+    return round(sum * 0.4 + egz * 0.6);
 }
 
 template <typename Container>
@@ -622,7 +622,7 @@ void Container(int conchoise) {
         knowhomework = HomeworkKnown();
         showaverage = SA();
         Manualterminal(s, Entergrades, knowhomework, showaverage, students);
-        sort(s.begin(), s.end(), comparePagalPavarde);
+        //sort(s.begin(), s.end(), comparePagalPavarde);
         if (showaverage==1) {
             printheaderAverage();
             printfinal(s, students);
@@ -652,7 +652,7 @@ void Container(int conchoise) {
         knowhomework = HomeworkKnown();
         showaverage = SA();
         Manualterminal(s, Entergrades, knowhomework, showaverage, students);
-        s.sort(comparePagalPavarde);
+        //s.sort(comparePagalPavarde);
         if (showaverage==1) {
             printheaderAverage();
             printfinal(s, students);
@@ -682,7 +682,7 @@ void Container(int conchoise) {
         knowhomework = HomeworkKnown();
         showaverage = SA();
         Manualterminal(s, Entergrades, knowhomework, showaverage, students);
-        sort(s.begin(), s.end(), comparePagalPavarde);
+        //sort(s.begin(), s.end(), comparePagalPavarde);
         if (showaverage==1) {
             printheaderAverage();
             printfinal(s, students);

@@ -13,6 +13,7 @@
 #include <string>
 #include <cctype>
 #include "Studentas.h"
+#include <cmath>
 using namespace std;
 void Container(int);
 void GenerateFile(int);
