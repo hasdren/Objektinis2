@@ -127,3 +127,5 @@ Toliau programa jūsų paprašys pasirinkti kaip duomenys turėtų būti nuskait
 [v1.2](https://github.com/hasdren/Objektinis2/releases/tag/v1.2) Įvykdyta `Rule of three`: pridėtas kopijavimo konstruktorius, priskyrimo operatorius bei destruktorius.
 
 [v1.3](https://github.com/hasdren/Objektinis2/releases/tag/v1.3) Sukurta derived klasė `Studentas` iš bazinės abstrakčios klasės `Zmogus`
+
+[v1.4](https://github.com/hasdren/Objektinis2/releases/tag/v1.4) Pridėta doxygen dokumentacija, unit testingai naudojant catch.hpp biblioteką
